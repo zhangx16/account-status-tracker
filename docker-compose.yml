@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  account-status-tracker:
+    build: .
+    container_name: account-status-tracker
+    ports:
+      - '8080:80'
+    restart: unless-stopped
